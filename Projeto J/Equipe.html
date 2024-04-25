@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="Equipe.css" />
+    <link rel="stylesheet" href="equipe.js"/>
+    <title>Projeto de Pesquisa - Equipe</title>
+  </head>
+
+  <body>
+    <div class="containers">
+      <link rel="icon" href="." />
+
+      <header>
+        <div class="esquerda">
+          <a class="logo" href="Inicial.html"
+            ><img src="imagem1.jpeg" alt="logo"
+          /></a>
+          <a class="nome" href="Inicial.html">Projeto de Pesquisa</a>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a href="Equipe.html">Equipe</a></li>
+          </ul>
+        </nav> 
+      </header>
+
+      <div class="container">
+
+        <div class="grid-item">
+        <img src="00.png" alt="Imagem" class="circular-image" />
+      <ul id="lista" class="lista">
+        <li>Lucas</li>
+      </ul>
+      <script>
+        const itens_lista = [
+          {
+            nome: "linkedin",
+            link: "https://www.linkedin.com/in/lucaslimaoficial/",
+          },
+          {
+            nome: "Google Cloud",
+            link: "https://www.cloudskillsboost.google/public_profiles/472bec56-d52b-4178-8a6c-541c69e32679",
+          }
+        ];
+    
+        const ul = document.getElementById("lista");
+    
+        ul.addEventListener("mouseenter", (event) => {
+          itens_lista.forEach((item) => {
+            const li = document.createElement("li");
+            li.innerHTML = `<a href="${item.link}" target="_blank">${item.nome}</a>`;
+            ul.appendChild(li);
+          });
+        });
+    
+        ul.addEventListener("mouseleave", (event) => {
+          ul.innerHTML = "Lucas";
+        });
+      </script>
+      </div>
+
+        <div class="grid-item">
+            <img src="04.png" alt="Imagem" class="circular-image" />
+          <pi id="list" class="list">
+            <pk>Abraão</pk>
+          </pi>
+          <script>
+            const itens_list = [
+            {
+            nome: "linkedin",
+            link: "https://www.linkedin.com/in/abraaoteixeira",
+          },
+          {
+            nome: "Google Cloud",
+            link: "https://www.cloudskillsboost.google/public_profiles/51205ffa-c5e2-4eb8-963a-1b6d2e1cfa34",
+          }
+            ];
+        
+            const pi = document.getElementById("list");
+        
+            pi.addEventListener("mouseenter", (event) => {
+              itens_list.forEach((item) => {
+                const pk = document.createElement("pk");
+                pk.innerHTML = `<b href="${item.link}" target="_blank">${item.nome}</b>`;
+                pi.appendChild(pk);
+              }
+            )});
+        
+            pi.addEventListener("mouseleave", (event) => {
+              pi.innerHTML = "Abraão";
+            });
+          </script>
+          </div>
+
+          <div class="grid-item">
+            <img src="02.jpg" alt="Imagem" class="circular-image" />
+          <al id="lis" class="lis">
+            <xc>Lohan</xc>
+          </al>
+          <script>
+            const itens_lis = [
+            {
+            nome: "linkedin",
+            link: "",
+          },
+          {
+            nome: "Google Cloud",
+            link: "https://www.cloudskillsboost.google/public_profiles/c83cb1c0-20e7-43a2-b98d-e4fc0f528f28",
+          }
+            ];
+        
+            const al = document.getElementById("lis");
+        
+            al.addEventListener("mouseenter", (event) => {
+              itens_lis.forEach((item) => {
+                const xc = document.createElement("xc");
+                xc.innerHTML = `<c href="${item.link}" target="_blank">${item.nome}</c>`;
+                al.appendChild(xc);
+              }
+            )});
+        
+            al.addEventListener("mouseleave", (event) => {
+              al.innerHTML = "Lohan";
+            });
+          </script>
+          </div>
+
+            <div class="grid-item">
+              <img src="03.jpeg" alt="Imagem" class="circular-image" />
+              <pl id="ista" class="ista">
+                <ji>Beatriz</ji>
+              </pl>
+              <script>
+                const itens_ista = [
+            {
+            nome: "linkedin",
+            link: "https://www.linkedin.com/in/beatriz-dalagnoli-024782209/",
+          },
+          {
+            nome: "Google Cloud",
+            link: "https://www.cloudskillsboost.google/public_profiles/41ee2a6f-b3cc-4a66-a42b-313cd8f3e2b5",
+          }
+                ];
+            
+                const pl = document.getElementById("ista");
+            
+                pl.addEventListener("mouseenter", (event) => {
+                  itens_ista.forEach((item) => {
+                    const ji = document.createElement("ji");
+                    ji.innerHTML = `<d href="${item.link}" target="_blank">${item.nome}</d>`;
+                    pl.appendChild(ji);
+                  }
+                )});
+            
+                pl.addEventListener("mouseleave", (event) => {
+                  pl.innerHTML = "Beatriz";
+                });
+              </script>
+              </div>
+
+               <div class="grid-item">
+                <img src="05.jpg" alt="Imagem" class="circular-image" />
+                <ll id="sta" class="sta">
+                  <lg>Leticia</lg>
+                </ll>
+                <script>
+                  const itens_sta = [
+            {
+            nome: "linkedin",
+            link: "",
+          },
+          {
+            nome: "Google Cloud",
+            link: "",
+          }
+                  ];
+              
+                  const ll = document.getElementById("sta");
+              
+                  ll.addEventListener("mouseenter", (event) => {
+                    itens_sta.forEach((item) => {
+                      const lg = document.createElement("lg");
+                      lg.innerHTML = `<e href="${item.link}" target="_blank">${item.nome}</e>`;
+                      ll.appendChild(lg);
+                    }
+                  )});
+              
+                  ll.addEventListener("mouseleave", (event) => {
+                    ll.innerHTML = "Leticia";
+                  });
+                </script>
+                </div>
+
+                  <div class="grid-item">
+                    <img src="01.JPG" alt="Imagem" class="circular-image" />
+                  <ml id="ta" class="ta">
+                    <gf>Jackson</gf>
+                  </ml>
+                  <script>
+                    const itens_ta = [   
+            {
+            nome: "linkedin",
+            link: "linkedin.com/in/jackson-mallmann-30212048",
+          },
+          {
+            nome: "Google Cloud",
+            link: "https://www.cloudskillsboost.google/public_profiles/343c45d8-837c-4843-9b06-ec4e552bd068",
+          }
+                    ];
+                
+                    const ml = document.getElementById("ta");
+                
+                    ml.addEventListener("mouseenter", (event) => {
+                      itens_ta.forEach((item) => {
+                        const gf = document.createElement("gf");
+                        gf.innerHTML = `<f href="${item.link}" target="_blank">${item.nome}</f>`;
+                        ml.appendChild(gf);
+                      }
+                    )});
+                
+                    ml.addEventListener("mouseleave", (event) => {
+                      ml.innerHTML = "Jackson";
+                    });
+                  </script>
+                  </div>
+                </div>
+    </div>
+
+      <footer>
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="titulo">Sobre Nós:</h3>
+            <p>Projeto de Pesquisa.</p>
+          </div>
+          <div class="footer-section">
+            <h3 class="titulo">Acesso Fácil:</h3>
+            <ul>
+              <li><a href="Inicial.html">Inicial</a></li>
+              <li><a href="Equipe.html">Equipe</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="footer-bottom" class="footer-bottom"></div>
+      </footer>
+    </div>
+  </body>
+</html>
